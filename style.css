@@ -66,3 +66,39 @@ img{
     width: 1000px;
     height:400px;
 }
+/*portfolio styles */
+
+.content h1 {
+     
+    color: black;
+}
+
+#portfolio {
+    list-style-type: none;
+
+    padding-left: 0;
+}
+
+#portfolio 1i {
+    background: #fff;
+
+    padding: 10x;
+
+    border-radius:  10px;
+
+    margin-bottem: 10px;
+}
+
+#portfolio li: hover {
+
+    background: #eee;
+
+
+}
+
+#portfolio a{ 
+
+    text-decoration: none;
+
+    colo:#454545;
+}
