@@ -49,7 +49,12 @@
 			setInterval(update, 50);
 
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
-			box.on('click', handleBoxClick);
+			function handleBoxClick(){
+				positionX = 0
+			}
+			
+				
+			
 
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
@@ -66,6 +71,9 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
+			var positionX = 0; 
+			var points = 0;
+			
 
 
 
@@ -75,6 +83,8 @@
 			turn it around! 
 			*/
 			function update() {
+				positionX = positionX + 10; 
+				moveBoxTo(positionX);
 
 
 			};
@@ -85,8 +95,8 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-
-
+              positionX = 0;
+              changeBoxText(points)
 			};
 
 
